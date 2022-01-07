@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="format-detection" content="telephone=0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="shortcut icon"  type="image/x-icon" href="return.png">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Sok</title>
+</head>
+<body>
+	<div class="preloader">
+		<!-- Элементы прелоадера -->
+		<div class="preloader-2">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+    </div>
+	<section>
+	
+			<nav class="nav-wrapper">
+            
+				<div class="logo">
+					<span>Тропический</span> Сад
+				</div>
+            <div class="toggle"></div>			
+				<ul class="nav navigation">
+						<li class="nav__item">
+							<a class="nav__link" href="#">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">О продукте</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Цены</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Блог</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Контакты</a>
+						</li>
+                  <li class="nav__item"><span class="themeSwitch">
+                     <ion-icon class="moon" name="moon-outline"></ion-icon>
+                     <ion-icon class="sunny" name="sunny-outline"></ion-icon>
+                  </span></li>
+				</ul>				
+			</nav>
+			<div class="header-content">
+				<div class="header-desk">
+					<h2 class="header__title">Натуральные соки</h2>
+					<div class="header__text">
+						<p> Сок является одним из самых целебных напитков, дарит энергию и заряжает витаминами. Стакан сока в день и ты готов свернуть горы!</p>
+					</div>
+					<a href="#" class="header__btn">Получить заряд</a>
+				</div>
+				<div class="header-photo">
+					<img src="img/product.webp" alt="Photo">
+					
+				</div>
+			</div>
+			<ul class="sci">
+            <li><a href="#"><ion-icon name="logo-vk"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+         </ul>
+	
+	</section>
+
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      let themeSwitch = document.querySelector('.themeSwitch');
+      let body = document.querySelector('body');
+      themeSwitch.onclick = function(){
+         themeSwitch.classList.toggle('active');
+         body.classList.toggle('dark');
+      }
+      let menutoggle = document.querySelector('.toggle');
+      let navigation = document.querySelector('.navigation');
+      menutoggle.onclick = function(){
+         menutoggle.classList.toggle('active');
+         navigation.classList.toggle('active');
+      }
+   </script>
+</body>
+</html>
